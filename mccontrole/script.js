@@ -1,6 +1,4 @@
-// ======================================================
-// ========== MENU HAMBURGER COM ANIMAÇÃO ===============
-// ======================================================
+
 const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('.nav-links');
 
@@ -11,9 +9,6 @@ if (hamburger && navLinks) {
   });
 }
 
-// ======================================================
-// ===============   CARROSSEL AUTOMÁTICO   ==============
-// ======================================================
 const items = document.querySelectorAll('.carousel-item');
 let currentIndex = 0;
 
@@ -34,9 +29,6 @@ if (items.length > 0) {
   setInterval(nextSlide, 5000);
 }
 
-// ======================================================
-// ============== FORMULÁRIO PARA WHATSAPP ==============
-// ======================================================
 const form = document.getElementById('contact-form');
 
 if (form) {
@@ -60,9 +52,6 @@ if (form) {
   });
 }
 
-// ======================================================
-// ===== ANIMAÇÕES DE ELEMENTOS INTERNOS AO ENTRAR ======
-// ======================================================
 const animatedElements = document.querySelectorAll('.service, .member');
 
 if (animatedElements.length > 0) {
@@ -81,9 +70,6 @@ if (animatedElements.length > 0) {
   });
 }
 
-// ======================================================
-// ========== ANIMAÇÕES SUAVES ENTRE SEÇÕES =============
-// ======================================================
 const sections = document.querySelectorAll('section');
 
 if (sections.length > 0) {
@@ -102,16 +88,12 @@ if (sections.length > 0) {
   });
 }
 
-// ======================================================
-// ================ POPUP DE ATENDIMENTO =================
-// ======================================================
 setTimeout(() => {
   const popup = document.getElementById('popupAtendimento');
   if (popup) popup.style.display = 'block';
 }, 5000);
 
 
-// ========= FORM POPUP =========
 const openFormBtn = document.querySelector('.btn-open-form');
 const popupForm = document.getElementById('popupForm');
 const closeFormBtn = document.querySelector('.close-form');
@@ -130,7 +112,6 @@ if (openFormBtn && popupForm && closeFormBtn) {
   });
 }
 
-// ========= FORM POPUP PARA WHATSAPP =========
 const popupFormEl = document.getElementById('popupContactForm');
 
 if (popupFormEl) {
@@ -149,7 +130,7 @@ if (popupFormEl) {
       const whatsappUrl = `https://wa.me/5511999999999?text=${texto}`;
       window.open(whatsappUrl, '_blank');
 
-      // fecha o popup após enviar
+  
       document.getElementById('popupForm').style.display = 'none';
     } else {
       alert('Por favor, preencha todos os campos antes de enviar.');

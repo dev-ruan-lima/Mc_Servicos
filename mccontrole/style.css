@@ -1,6 +1,4 @@
-/* --------------------------------------------------
-   RESET E CONFIGURAÇÕES BASE
--------------------------------------------------- */
+
 * {
   margin: 0;
   padding: 0;
@@ -18,10 +16,6 @@ body {
   line-height: 1.6;
 }
 
-/* --------------------------------------------------
-   VARIÁVEIS
--------------------------------------------------- */
-
 :root {
   --verde: #344e41;
   --verde-escuro: #2a3a32;
@@ -34,7 +28,6 @@ body {
   --preto: #333
 }
 
-/* Cabeçalho */
 header {
   background-color: var(--verde);
   color: var(--branco);
@@ -190,9 +183,6 @@ header {
   }
 }
 
-/* ============================
-   HERO SECTION
-============================ */
 .hero {
   padding: 7rem 0 5rem;
   background: var(--fundo);
@@ -273,10 +263,6 @@ header {
   }
 }
 
-/* --------------------------------------------------
-   ONDAS SVG
--------------------------------------------------- */
-
 .wave-separator,
 .wave-separator-cima {
   width: 100%;
@@ -318,10 +304,6 @@ header {
   margin-top: -2px;
 }
 
-/* --------------------------------------------------
-   SEÇÕES BASE
--------------------------------------------------- */
-
 section {
   padding: 4rem 1rem;
 }
@@ -337,10 +319,6 @@ h2 {
   color: var(--verde);
   margin-bottom: 2rem;
 }
-
-/* --------------------------------------------------
-   SOBRE NÓS
--------------------------------------------------- */
 
 .about {
   background: var(--fundo);
@@ -381,10 +359,6 @@ h2 {
 .about-textos li {
   margin-bottom: 0.5rem;
 }
-
-/* --------------------------------------------------
-   SERVIÇOS
--------------------------------------------------- */
 
 .services {
   padding: 60px 20px;
@@ -450,10 +424,6 @@ h2 {
   font-size: 1rem;
   line-height: 1.5;
 }
-
-/* --------------------------------------------------
-   CARROSSEL
--------------------------------------------------- */
 
 .carousel-section {
   padding: 4rem 0;
@@ -521,10 +491,6 @@ h2 {
   }
 }
 
-/* --------------------------------------------------
-   MAPA
--------------------------------------------------- */
-
 .sec-localizacao {
   padding: 60px 20px;
   background: var(--fundo);
@@ -578,11 +544,6 @@ h2 {
   display: block;
 }
 
-/* --------------------------------------------------
-   RODAPÉ
--------------------------------------------------- */
-
-/* FOOTER */
 .footer {
   background: var(--verde);
   color: #fff;
@@ -671,11 +632,6 @@ h2 {
   color: var(--dourado);
 }
 
-
-/* --------------------------------------------------
-   BOTÃO WHATSAPP
--------------------------------------------------- */
-
 .whatsapp-button,
 .whatsapp-button-mobile {
   position: fixed;
@@ -696,87 +652,6 @@ h2 {
   transform: scale(1.1);
 }
 
-/* --------------------------------------------------
-   POPUP DE ATENDIMENTO
--------------------------------------------------- */
-
-.popup-atendimento {
-  position: fixed;
-  bottom: 100px;
-  right: 20px;
-  background: var(--branco);
-  border: 2px solid var(--verde);
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  padding: 1rem;
-  width: 280px;
-  z-index: 999;
-  animation: fadeInUp 1s ease forwards;
-  display: none;
-}
-
-.popup-content {
-  text-align: center;
-  font-size: 0.9rem;
-}
-
-.popup-content h3 {
-  color: var(--verde);
-  margin-bottom: 0.5rem;
-}
-
-.popup-button {
-  display: inline-block;
-  margin-top: 0.5rem;
-  background-color: #25D366;
-  color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-
-.popup-button:hover {
-  background-color: var(--verde);
-}
-
-.close-popup {
-  position: absolute;
-  top: 5px;
-  right: 10px;
-  font-size: 1.2rem;
-  cursor: pointer;
-  color: var(--verde);
-}
-
-/* --------------------------------------------------
-   ANIMAÇÕES
--------------------------------------------------- */
-
-.pre-animate {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
-}
-
-.animate-in {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-@keyframes fadeInUp {
-  from {
-    transform: translateY(30px);
-    opacity: 0;
-  }
-
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
 .popup-atendimento {
   position: fixed;
   bottom: 100px;
@@ -850,9 +725,78 @@ h2 {
   }
 }
 
-/* --------------------------------------------------
-   SEGMENTOS
--------------------------------------------------- */
+.popup-atendimento {
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  background: var(--branco);
+  border: 2px solid var(--verde);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  width: 280px;
+  z-index: 999;
+  animation: fadeInUp 1s ease forwards;
+  display: none;
+}
+
+.popup-content {
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.popup-content h3 {
+  color: var(--verde);
+  margin-bottom: 0.5rem;
+}
+
+.popup-button {
+  display: inline-block;
+  margin-top: 0.5rem;
+  background-color: #25D366;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.popup-button:hover {
+  background-color: var(--verde);
+}
+
+.close-popup {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: var(--verde);
+}
+
+.pre-animate {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 
 .segmentos {
   background: var(--fundo);
@@ -916,9 +860,6 @@ h2 {
   color: var(--branco);
 }
 
-/* --------------------------------------------------
-   formulario
--------------------------------------------------- */
 
 .formulario {
   display: flex;
@@ -988,10 +929,6 @@ form button:hover {
   color: var(--dourado);
   transform: scale(1.05);
 }
-
-/* --------------------------------------------------
-cursos
--------------------------------------------------- */
 
 .cursos {
   display: grid;
@@ -1113,13 +1050,6 @@ cursos
   transition: opacity .3s ease-in;
 }
 
-
-
-/* ===========================================
-   RESPONSIVIDADE GERAL
-=========================================== */
-
-/* --- Telas até 1200px --- */
 @media (max-width: 1200px) {
 
   .about-grid {
@@ -1161,7 +1091,6 @@ cursos
   }
 }
 
-/* --- Telas até 992px --- */
 @media (max-width: 992px) {
   .hero {
     padding: 6rem 0 4rem;
@@ -1215,7 +1144,6 @@ cursos
   }
 }
 
-/* --- Telas até 768px (TABLET / CELULAR GRANDE) --- */
 @media (max-width: 768px) {
 
   .nav-links {
@@ -1318,7 +1246,6 @@ cursos
   }
 }
 
-/* --- Telas até 480px (CELULAR PEQUENO) --- */
 @media (max-width: 480px) {
   .hero {
     padding: 6rem 0 3rem;
